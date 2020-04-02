@@ -1,0 +1,1183 @@
+EESchema Schematic File Version 4
+LIBS:AmpliAudio-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Projet Ampli"
+Date "2020-03-23"
+Rev ""
+Comp "Paul NOUGUE-Alassane GUEYE"
+Comment1 "3IMACSD"
+Comment2 "INSA Toulouse"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5E66623C
+P 800 6700
+F 0 "J3" H 718 6375 50  0000 C CNN
+F 1 "Conn_01x03" H 718 6466 50  0000 C CNN
+F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_3-G-5,08_1x03_P5.08mm_Vertical" H 800 6700 50  0001 C CNN
+F 3 "~" H 800 6700 50  0001 C CNN
+	1    800  6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5E6679EF
+P 1600 6550
+F 0 "C5" H 1715 6596 50  0000 L CNN
+F 1 "100n" H 1715 6505 50  0000 L CNN
+F 2 "CmpAmpliAudio:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 1638 6400 50  0001 C CNN
+F 3 "~" H 1600 6550 50  0001 C CNN
+	1    1600 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5E667FD0
+P 1600 7000
+F 0 "C7" H 1715 7046 50  0000 L CNN
+F 1 "100n" H 1715 6955 50  0000 L CNN
+F 2 "CmpAmpliAudio:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 1638 6850 50  0001 C CNN
+F 3 "~" H 1600 7000 50  0001 C CNN
+	1    1600 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5E6689CC
+P 2000 6550
+F 0 "C4" H 2118 6596 50  0000 L CNN
+F 1 "10u" H 2118 6505 50  0000 L CNN
+F 2 "CmpAmpliAudio:CP_Radial_D8.0mm_P5.00mm" H 2038 6400 50  0001 C CNN
+F 3 "~" H 2000 6550 50  0001 C CNN
+	1    2000 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5E668F06
+P 2000 7000
+F 0 "C6" H 2118 7046 50  0000 L CNN
+F 1 "10u" H 2118 6955 50  0000 L CNN
+F 2 "CmpAmpliAudio:CP_Radial_D8.0mm_P5.00mm" H 2038 6850 50  0001 C CNN
+F 3 "~" H 2000 7000 50  0001 C CNN
+	1    2000 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 6600 1200 6600
+Wire Wire Line
+	1200 6600 1200 6150
+Wire Wire Line
+	1600 6150 1600 6400
+Wire Wire Line
+	2000 6400 2000 6150
+Wire Wire Line
+	2000 6150 1600 6150
+Connection ~ 1600 6150
+Wire Wire Line
+	2000 6700 2000 6850
+Wire Wire Line
+	2000 7150 2000 7500
+Wire Wire Line
+	2000 7500 1600 7500
+Wire Wire Line
+	1600 7500 1600 7150
+Wire Wire Line
+	1600 6850 1600 6700
+Wire Wire Line
+	1600 6700 1000 6700
+Connection ~ 1600 6700
+Wire Wire Line
+	1000 6800 1200 6800
+Wire Wire Line
+	1200 6800 1200 7500
+Wire Wire Line
+	1200 7500 1600 7500
+Connection ~ 1600 7500
+Wire Wire Line
+	1600 6700 2000 6700
+Connection ~ 2000 6700
+$Comp
+L power:GND #PWR0101
+U 1 1 5E66B015
+P 2550 6800
+F 0 "#PWR0101" H 2550 6550 50  0001 C CNN
+F 1 "GND" H 2555 6627 50  0000 C CNN
+F 2 "" H 2550 6800 50  0001 C CNN
+F 3 "" H 2550 6800 50  0001 C CNN
+	1    2550 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6800 2550 6700
+Wire Wire Line
+	2550 6700 2000 6700
+$Comp
+L power:+12V #PWR0102
+U 1 1 5E66C162
+P 1200 5750
+F 0 "#PWR0102" H 1200 5600 50  0001 C CNN
+F 1 "+12V" H 1215 5923 50  0000 C CNN
+F 2 "" H 1200 5750 50  0001 C CNN
+F 3 "" H 1200 5750 50  0001 C CNN
+	1    1200 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6150 1600 6150
+Wire Wire Line
+	1200 5750 1200 5800
+Connection ~ 1200 6150
+$Comp
+L power:-12V #PWR0103
+U 1 1 5E66D24F
+P 1200 7500
+F 0 "#PWR0103" H 1200 7600 50  0001 C CNN
+F 1 "-12V" H 1215 7673 50  0000 C CNN
+F 2 "" H 1200 7500 50  0001 C CNN
+F 3 "" H 1200 7500 50  0001 C CNN
+	1    1200 7500
+	-1   0    0    1   
+$EndComp
+Connection ~ 1200 7500
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E66E604
+P 1200 5800
+F 0 "#FLG0101" H 1200 5875 50  0001 C CNN
+F 1 "PWR_FLAG" V 1200 5927 50  0000 L CNN
+F 2 "" H 1200 5800 50  0001 C CNN
+F 3 "~" H 1200 5800 50  0001 C CNN
+	1    1200 5800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1200 5800
+Wire Wire Line
+	1200 5800 1200 6150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E66EC07
+P 1200 7500
+F 0 "#FLG0102" H 1200 7575 50  0001 C CNN
+F 1 "PWR_FLAG" V 1200 7627 50  0000 L CNN
+F 2 "" H 1200 7500 50  0001 C CNN
+F 3 "~" H 1200 7500 50  0001 C CNN
+	1    1200 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5E66F31C
+P 2550 6800
+F 0 "#FLG0103" H 2550 6875 50  0001 C CNN
+F 1 "PWR_FLAG" V 2550 6928 50  0000 L CNN
+F 2 "" H 2550 6800 50  0001 C CNN
+F 3 "~" H 2550 6800 50  0001 C CNN
+	1    2550 6800
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 6800
+$Comp
+L Device:D_Zener_ALT Dz1
+U 1 1 5E671C03
+P 2350 1150
+F 0 "Dz1" V 2304 1229 50  0000 L CNN
+F 1 "BZX55C5V1" V 2395 1229 50  0000 L CNN
+F 2 "CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal" H 2350 1150 50  0001 C CNN
+F 3 "~" H 2350 1150 50  0001 C CNN
+	1    2350 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E672B9E
+P 3050 1150
+F 0 "R4" H 3120 1196 50  0000 L CNN
+F 1 "18k" H 3120 1105 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 1150 50  0001 C CNN
+F 3 "~" H 3050 1150 50  0001 C CNN
+	1    3050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E6731D1
+P 2350 1850
+F 0 "R5" H 2420 1896 50  0000 L CNN
+F 1 "1380" H 2420 1805 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 1850 50  0001 C CNN
+F 3 "~" H 2350 1850 50  0001 C CNN
+	1    2350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q3
+U 1 1 5E674D23
+P 2950 1600
+F 0 "Q3" H 3140 1554 50  0000 L CNN
+F 1 "2N2907" H 3140 1645 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 3150 1525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 2950 1600 50  0001 L CNN
+	1    2950 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E67574F
+P 2350 2250
+F 0 "#PWR0104" H 2350 2000 50  0001 C CNN
+F 1 "GND" H 2355 2077 50  0000 C CNN
+F 2 "" H 2350 2250 50  0001 C CNN
+F 3 "" H 2350 2250 50  0001 C CNN
+	1    2350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2250 2350 2000
+Wire Wire Line
+	2350 1700 2350 1600
+Wire Wire Line
+	3050 1400 3050 1300
+Wire Wire Line
+	2750 1600 2350 1600
+Connection ~ 2350 1600
+Wire Wire Line
+	2350 1600 2350 1300
+$Comp
+L power:+12V #PWR0105
+U 1 1 5E6785CD
+P 3900 700
+F 0 "#PWR0105" H 3900 550 50  0001 C CNN
+F 1 "+12V" H 3900 850 50  0000 C CNN
+F 2 "" H 3900 700 50  0001 C CNN
+F 3 "" H 3900 700 50  0001 C CNN
+	1    3900 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1000 2350 700 
+Wire Wire Line
+	2350 700  3050 700 
+Wire Wire Line
+	3050 700  3050 1000
+Wire Wire Line
+	3050 700  3900 700 
+Connection ~ 3050 700 
+Wire Wire Line
+	3900 700  4300 700 
+Connection ~ 3900 700 
+$Comp
+L Transistor_BJT:2N3906 Q1
+U 1 1 5E67EC67
+P 2350 3300
+F 0 "Q1" H 2540 3254 50  0000 L CNN
+F 1 "2N2907" H 2540 3345 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 2550 3225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 2350 3300 50  0001 L CNN
+	1    2350 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q2
+U 1 1 5E67F209
+P 3650 3300
+F 0 "Q2" H 3841 3254 50  0000 L CNN
+F 1 "2N2907" H 3841 3345 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 3850 3225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 3650 3300 50  0001 L CNN
+	1    3650 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E680700
+P 2450 4300
+F 0 "R2" H 2520 4346 50  0000 L CNN
+F 1 "14.4k" H 2520 4255 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2380 4300 50  0001 C CNN
+F 3 "~" H 2450 4300 50  0001 C CNN
+	1    2450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E680BAF
+P 3550 4300
+F 0 "R3" H 3620 4346 50  0000 L CNN
+F 1 "14.4k" H 3620 4255 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3480 4300 50  0001 C CNN
+F 3 "~" H 3550 4300 50  0001 C CNN
+	1    3550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E680F08
+P 2000 3800
+F 0 "R1" H 2070 3846 50  0000 L CNN
+F 1 "1k" H 2070 3755 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1930 3800 50  0001 C CNN
+F 3 "~" H 2000 3800 50  0001 C CNN
+	1    2000 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3100 2450 3100
+Wire Wire Line
+	3050 1800 3050 3100
+Wire Wire Line
+	3550 3500 3550 4150
+Wire Wire Line
+	2450 4450 2450 5150
+Wire Wire Line
+	3550 5150 3550 4450
+$Comp
+L Device:CP C1
+U 1 1 5E68562B
+P 1800 3300
+F 0 "C1" V 1545 3300 50  0000 C CNN
+F 1 "47u" V 1636 3300 50  0000 C CNN
+F 2 "CmpAmpliAudio:CP_Radial_D8.0mm_P5.00mm" H 1838 3150 50  0001 C CNN
+F 3 "~" H 1800 3300 50  0001 C CNN
+	1    1800 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 3300 1450 3300
+$Comp
+L power:GND #PWR0106
+U 1 1 5E688AB5
+P 2000 4150
+F 0 "#PWR0106" H 2000 3900 50  0001 C CNN
+F 1 "GND" H 2005 3977 50  0000 C CNN
+F 2 "" H 2000 4150 50  0001 C CNN
+F 3 "" H 2000 4150 50  0001 C CNN
+	1    2000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4150 2000 3950
+$Comp
+L Device:R R8
+U 1 1 5E69FAC8
+P 5600 2750
+F 0 "R8" V 5393 2750 50  0000 C CNN
+F 1 "R" V 5484 2750 50  0000 C CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 2750 50  0001 C CNN
+F 3 "~" H 5600 2750 50  0001 C CNN
+	1    5600 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E6A1627
+P 4150 6400
+F 0 "#PWR0107" H 4150 6150 50  0001 C CNN
+F 1 "GND" H 4155 6227 50  0000 C CNN
+F 2 "" H 4150 6400 50  0001 C CNN
+F 3 "" H 4150 6400 50  0001 C CNN
+	1    4150 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6100 4150 6400
+Wire Wire Line
+	2150 3300 2000 3300
+Wire Wire Line
+	3550 3100 3050 3100
+Connection ~ 3050 3100
+Wire Wire Line
+	3550 5150 2450 5150
+Wire Wire Line
+	4150 5800 4150 5650
+Wire Wire Line
+	4150 3300 3850 3300
+Wire Wire Line
+	4600 5650 4150 5650
+Wire Wire Line
+	4150 3300 4150 5650
+Connection ~ 4150 5650
+Wire Wire Line
+	3550 5150 4450 5150
+Wire Wire Line
+	4450 5150 4450 5200
+Connection ~ 3550 5150
+Wire Wire Line
+	4450 5150 5900 5150
+Connection ~ 4450 5150
+$Comp
+L power:-12V #PWR0108
+U 1 1 5E6AFD73
+P 4450 5200
+F 0 "#PWR0108" H 4450 5300 50  0001 C CNN
+F 1 "-12V" H 4465 5373 50  0000 C CNN
+F 2 "" H 4450 5200 50  0001 C CNN
+F 3 "" H 4450 5200 50  0001 C CNN
+	1    4450 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E6B1306
+P 4800 3500
+F 0 "C2" V 4548 3500 50  0000 C CNN
+F 1 "C" V 4639 3500 50  0000 C CNN
+F 2 "CmpAmpliAudio:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4838 3350 50  0001 C CNN
+F 3 "~" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3800 2450 4150
+Wire Wire Line
+	2450 3500 2450 3800
+Connection ~ 2450 3800
+Wire Wire Line
+	2450 3800 4650 3800
+$Comp
+L Transistor_BJT:2N2219 Q4
+U 1 1 5E6BD053
+P 5250 3800
+F 0 "Q4" H 5440 3846 50  0000 L CNN
+F 1 "2N2222" H 5440 3755 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 5450 3725 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 5250 3800 50  0001 L CNN
+	1    5250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3800 4650 3500
+Wire Wire Line
+	4950 3500 5350 3500
+Wire Wire Line
+	5350 3500 5350 3600
+Wire Wire Line
+	5050 3800 4650 3800
+Connection ~ 4650 3800
+Wire Wire Line
+	5600 4300 5350 4300
+Wire Wire Line
+	5350 4300 5350 4000
+Wire Wire Line
+	5350 3500 5900 3500
+Connection ~ 5350 3500
+$Comp
+L Device:R R6
+U 1 1 5E6D0FA3
+P 5900 4850
+F 0 "R6" H 5970 4896 50  0000 L CNN
+F 1 "R" H 5970 4805 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5830 4850 50  0001 C CNN
+F 3 "~" H 5900 4850 50  0001 C CNN
+	1    5900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5000 5900 5150
+Connection ~ 5900 5150
+Wire Wire Line
+	5900 4700 5900 4500
+Connection ~ 5900 3500
+$Comp
+L Device:R_POT RV1
+U 1 1 5E6DEE45
+P 5350 2350
+F 0 "RV1" H 5281 2396 50  0000 R CNN
+F 1 "R_POT" H 5281 2305 50  0000 R CNN
+F 2 "CmpAmpliAudio:Potentiometer_Bourns_3296W_Vertical" H 5350 2350 50  0001 C CNN
+F 3 "~" H 5350 2350 50  0001 C CNN
+	1    5350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2500 5350 2750
+Wire Wire Line
+	5450 2750 5350 2750
+Connection ~ 5350 2750
+Wire Wire Line
+	5350 2750 5350 3500
+$Comp
+L Device:R R15
+U 1 1 5E667453
+P 4150 5950
+F 0 "R15" H 4220 5996 50  0000 L CNN
+F 1 "R" H 4220 5905 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 5950 50  0001 C CNN
+F 3 "~" H 4150 5950 50  0001 C CNN
+	1    4150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5E6678EE
+P 4750 5650
+F 0 "R14" V 4550 5600 50  0000 L CNN
+F 1 "R" V 4650 5550 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4680 5650 50  0001 C CNN
+F 3 "~" H 4750 5650 50  0001 C CNN
+	1    4750 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q5
+U 1 1 5E667FE6
+P 5800 4300
+F 0 "Q5" H 5990 4346 50  0000 L CNN
+F 1 "2N2222" H 5990 4255 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 6000 4225 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 5800 4300 50  0001 L CNN
+	1    5800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2750 5750 2750
+Wire Wire Line
+	5900 2750 5900 3500
+Wire Wire Line
+	5500 2350 5600 2350
+Wire Wire Line
+	5900 2550 5900 2750
+Connection ~ 5900 2750
+$Comp
+L Device:R R9
+U 1 1 5E66F374
+P 4300 950
+F 0 "R9" H 4370 996 50  0000 L CNN
+F 1 "R" H 4370 905 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 950 50  0001 C CNN
+F 3 "~" H 4300 950 50  0001 C CNN
+	1    4300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q7
+U 1 1 5E66F857
+P 4400 1450
+F 0 "Q7" H 4590 1404 50  0000 L CNN
+F 1 "2N2907" H 4590 1495 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 4600 1375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 4400 1450 50  0001 L CNN
+	1    4400 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 800  4300 700 
+Wire Wire Line
+	4300 1100 4300 1250
+Wire Wire Line
+	4300 1650 4300 1750
+Wire Wire Line
+	4300 1750 4600 1750
+Wire Wire Line
+	4600 1750 4600 1450
+$Comp
+L Device:R R10
+U 1 1 5E675615
+P 4300 2000
+F 0 "R10" H 4370 2046 50  0000 L CNN
+F 1 "R" H 4370 1955 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 2000 50  0001 C CNN
+F 3 "~" H 4300 2000 50  0001 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1850 4300 1750
+Connection ~ 4300 1750
+$Comp
+L Device:R_POT RV2
+U 1 1 5E67735B
+P 4300 2450
+F 0 "RV2" H 4231 2496 50  0000 R CNN
+F 1 "R_POT" H 4231 2405 50  0000 R CNN
+F 2 "CmpAmpliAudio:Potentiometer_Bourns_3296W_Vertical" H 4300 2450 50  0001 C CNN
+F 3 "~" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2300 4300 2200
+Wire Wire Line
+	4300 2200 4050 2200
+Wire Wire Line
+	4050 2200 4050 2450
+Wire Wire Line
+	4050 2450 4150 2450
+Connection ~ 4300 2200
+Wire Wire Line
+	4300 2200 4300 2150
+Wire Wire Line
+	4300 2600 4300 2750
+$Comp
+L power:GND #PWR0109
+U 1 1 5E67E5A0
+P 4300 2750
+F 0 "#PWR0109" H 4300 2500 50  0001 C CNN
+F 1 "GND" H 4305 2577 50  0000 C CNN
+F 2 "" H 4300 2750 50  0001 C CNN
+F 3 "" H 4300 2750 50  0001 C CNN
+	1    4300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q6
+U 1 1 5E67E84C
+P 5800 1450
+F 0 "Q6" H 5990 1404 50  0000 L CNN
+F 1 "2N2907" H 5990 1495 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 6000 1375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 5800 1450 50  0001 L CNN
+	1    5800 1450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5600 1450 4600 1450
+Connection ~ 4600 1450
+Wire Wire Line
+	5900 1650 5900 1850
+$Comp
+L Device:R R7
+U 1 1 5E6852FF
+P 5900 950
+F 0 "R7" H 5970 996 50  0000 L CNN
+F 1 "R" H 5970 905 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5830 950 50  0001 C CNN
+F 3 "~" H 5900 950 50  0001 C CNN
+	1    5900 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1250 5900 1100
+Wire Wire Line
+	5900 800  5900 700 
+Wire Wire Line
+	5900 700  4300 700 
+Connection ~ 4300 700 
+Wire Wire Line
+	5900 700  7050 700 
+Wire Wire Line
+	7050 700  7050 850 
+Connection ~ 5900 700 
+Wire Wire Line
+	6750 1200 6600 1200
+Wire Wire Line
+	6600 1200 6600 1650
+Wire Wire Line
+	6300 1850 5900 1850
+Connection ~ 5900 1850
+$Comp
+L Transistor_BJT:TIP42 Q10
+U 1 1 5E691DAB
+P 6950 1200
+F 0 "Q10" H 6750 950 50  0000 L CNN
+F 1 "TIP32" H 6700 1050 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-220-3_Vertical" H 7200 1125 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" H 6950 1200 50  0001 L CNN
+	1    6950 1200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6600 2050 6600 2150
+Wire Wire Line
+	6600 2150 7050 2150
+Wire Wire Line
+	7050 2150 7050 1400
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5E69605D
+P 7150 1200
+F 0 "HS1" V 7000 1250 50  0000 L CNN
+F 1 "Heatsink" V 7300 1200 50  0000 L CNN
+F 2 "CmpAmpliAudio:Heatsink_Fischer_SK104-STC-STIC_35x13mm_2xDrill2.5mm" H 7162 1200 50  0001 C CNN
+F 3 "~" H 7162 1200 50  0001 C CNN
+	1    7150 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E6971B7
+P 7050 2300
+F 0 "R11" H 7120 2346 50  0000 L CNN
+F 1 "R" H 7120 2255 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6980 2300 50  0001 C CNN
+F 3 "~" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 2150
+$Comp
+L Device:R R12
+U 1 1 5E69777C
+P 7050 2800
+F 0 "R12" H 7120 2846 50  0000 L CNN
+F 1 "R" H 7120 2755 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6980 2800 50  0001 C CNN
+F 3 "~" H 7050 2800 50  0001 C CNN
+	1    7050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2650 7050 2550
+$Comp
+L AmpliAudio-rescue:Jack_Mono-CmpAmpliAudio U2
+U 1 1 5E69CA4D
+P 1250 3200
+F 0 "U2" H 1278 3467 50  0000 C CNN
+F 1 "Jack_Mono" H 1278 3376 50  0000 C CNN
+F 2 "CmpAmpliAudio:Jack_35RAPC2AV" H 1300 3400 50  0001 C CNN
+F 3 "" H 1300 3400 50  0001 C CNN
+	1    1250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3000 7050 3000
+Wire Wire Line
+	5900 3500 5900 4100
+Wire Wire Line
+	6400 3500 5900 3500
+Wire Wire Line
+	6700 3000 6700 3300
+Wire Wire Line
+	7050 3000 7050 2950
+$Comp
+L Device:Q_NPN_CEB Q9
+U 1 1 5E6AC056
+P 6500 1850
+F 0 "Q9" H 6691 1896 50  0000 L CNN
+F 1 "BD139" H 6691 1805 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-126-3_Vertical" H 6700 1950 50  0001 C CNN
+F 3 "~" H 6500 1850 50  0001 C CNN
+	1    6500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_ECB Q11
+U 1 1 5E6ACA06
+P 6600 3500
+F 0 "Q11" H 6790 3454 50  0000 L CNN
+F 1 "BD138" H 6790 3545 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-126-3_Vertical" H 6800 3600 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7050 3000 7050 3700
+Connection ~ 7050 3000
+$Comp
+L Device:Q_NPN_BCE Q12
+U 1 1 5E6B131B
+P 6950 3900
+F 0 "Q12" H 6750 3800 50  0000 L CNN
+F 1 "TIP31" H 6700 3700 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-220-3_Vertical" H 7150 4000 50  0001 C CNN
+F 3 "~" H 6950 3900 50  0001 C CNN
+	1    6950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3900 6700 3900
+Wire Wire Line
+	6700 3900 6700 3700
+$Comp
+L Mechanical:Heatsink HS2
+U 1 1 5E6B4787
+P 7200 3900
+F 0 "HS2" V 7050 3950 50  0000 L CNN
+F 1 "Heatsink" V 7350 3900 50  0000 L CNN
+F 2 "CmpAmpliAudio:Heatsink_Fischer_SK104-STC-STIC_35x13mm_2xDrill2.5mm" H 7212 3900 50  0001 C CNN
+F 3 "~" H 7212 3900 50  0001 C CNN
+	1    7200 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 5150 7050 4150
+Wire Wire Line
+	5900 5150 7050 5150
+Wire Wire Line
+	7050 2550 8050 2550
+Connection ~ 7050 2550
+Wire Wire Line
+	7050 2550 7050 2450
+$Comp
+L Device:R R13
+U 1 1 5E6BB9C7
+P 8050 2800
+F 0 "R13" H 8120 2846 50  0000 L CNN
+F 1 "R" H 8120 2755 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7980 2800 50  0001 C CNN
+F 3 "~" H 8050 2800 50  0001 C CNN
+	1    8050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2650 8050 2550
+Connection ~ 8050 2550
+Wire Wire Line
+	8300 5650 8300 2550
+Wire Wire Line
+	4900 5650 8300 5650
+Wire Wire Line
+	8050 2550 8300 2550
+$Comp
+L power:GND #PWR0110
+U 1 1 5E6C54D1
+P 8050 2950
+F 0 "#PWR0110" H 8050 2700 50  0001 C CNN
+F 1 "GND" H 8055 2777 50  0000 C CNN
+F 2 "" H 8050 2950 50  0001 C CNN
+F 3 "" H 8050 2950 50  0001 C CNN
+	1    8050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2550 9300 2550
+Connection ~ 8300 2550
+$Comp
+L AmpliAudio-rescue:Relay_1CT-relay_1ct U1
+U 1 1 5E6CE587
+P 9600 2750
+F 0 "U1" H 9600 3217 50  0000 C CNN
+F 1 "Relay_1CT" H 9600 3126 50  0000 C CNN
+F 2 "CmpAmpliAudio:Relais_112LMH2" V 9650 3100 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" V 9600 2750 50  0001 C CNN
+	1    9600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5E67BFD2
+P 10700 2550
+F 0 "J2" H 10780 2542 50  0000 L CNN
+F 1 "Conn_01x02" H 10780 2451 50  0000 L CNN
+F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 10700 2550 50  0001 C CNN
+F 3 "~" H 10700 2550 50  0001 C CNN
+	1    10700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2550 10500 2550
+$Comp
+L power:GND #PWR0111
+U 1 1 5E6800F7
+P 10450 2800
+F 0 "#PWR0111" H 10450 2550 50  0001 C CNN
+F 1 "GND" H 10455 2627 50  0000 C CNN
+F 2 "" H 10450 2800 50  0001 C CNN
+F 3 "" H 10450 2800 50  0001 C CNN
+	1    10450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 2800 10450 2650
+Wire Wire Line
+	10450 2650 10500 2650
+Wire Wire Line
+	9300 2950 9150 2950
+Wire Wire Line
+	9150 2950 9150 3700
+Wire Wire Line
+	9150 3700 9050 3700
+$Comp
+L Diode:1N4148 D1
+U 1 1 5E68796C
+P 8900 3700
+F 0 "D1" H 8900 3916 50  0000 C CNN
+F 1 "1N4148" H 8900 3825 50  0000 C CNN
+F 2 "CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal" H 8900 3525 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8900 3700 50  0001 C CNN
+	1    8900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3700 8650 3700
+Wire Wire Line
+	8650 3700 8650 3150
+$Comp
+L power:+12V #PWR0112
+U 1 1 5E68C46B
+P 8650 3150
+F 0 "#PWR0112" H 8650 3000 50  0001 C CNN
+F 1 "+12V" H 8665 3323 50  0000 C CNN
+F 2 "" H 8650 3150 50  0001 C CNN
+F 3 "" H 8650 3150 50  0001 C CNN
+	1    8650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q13
+U 1 1 5E68CD6A
+P 9250 4000
+F 0 "Q13" H 9440 4046 50  0000 L CNN
+F 1 "2N2222" H 9440 3955 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-18-3" H 9450 3925 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 9250 4000 50  0001 L CNN
+	1    9250 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3800 9150 3700
+Connection ~ 9150 3700
+$Comp
+L Diode:1N4148 D2
+U 1 1 5E690F63
+P 9950 4000
+F 0 "D2" H 9950 4216 50  0000 C CNN
+F 1 "1N4148" H 9950 4125 50  0000 C CNN
+F 2 "CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal" H 9950 3825 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9950 4000 50  0001 C CNN
+	1    9950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5E695EE1
+P 10200 4300
+F 0 "C3" H 10318 4346 50  0000 L CNN
+F 1 "47u" H 10318 4255 50  0000 L CNN
+F 2 "CmpAmpliAudio:CP_Radial_D8.0mm_P5.00mm" H 10238 4150 50  0001 C CNN
+F 3 "~" H 10200 4300 50  0001 C CNN
+	1    10200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4350 9600 4000
+Wire Wire Line
+	9450 4000 9600 4000
+Connection ~ 9600 4000
+Wire Wire Line
+	9600 4000 9800 4000
+Wire Wire Line
+	9150 5300 9350 5300
+Wire Wire Line
+	9600 5300 9600 4650
+Wire Wire Line
+	10200 4450 10200 5300
+$Comp
+L power:-12V #PWR0113
+U 1 1 5E6A9B02
+P 10200 5300
+F 0 "#PWR0113" H 10200 5400 50  0001 C CNN
+F 1 "-12V" H 10215 5473 50  0000 C CNN
+F 2 "" H 10200 5300 50  0001 C CNN
+F 3 "" H 10200 5300 50  0001 C CNN
+	1    10200 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5E6AA976
+P 9350 5300
+F 0 "#PWR0114" H 9350 5050 50  0001 C CNN
+F 1 "GND" H 9355 5127 50  0000 C CNN
+F 2 "" H 9350 5300 50  0001 C CNN
+F 3 "" H 9350 5300 50  0001 C CNN
+	1    9350 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 5300
+Wire Wire Line
+	9350 5300 9600 5300
+$Comp
+L Device:R R16
+U 1 1 5E695C4D
+P 10200 3500
+F 0 "R16" H 10270 3546 50  0000 L CNN
+F 1 "R" H 10270 3455 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10130 3500 50  0001 C CNN
+F 3 "~" H 10200 3500 50  0001 C CNN
+	1    10200 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4200 9150 5300
+Wire Wire Line
+	10200 3650 10200 4000
+Wire Wire Line
+	10100 4000 10200 4000
+Connection ~ 10200 4000
+Wire Wire Line
+	10200 4000 10200 4150
+Wire Wire Line
+	10200 3350 10200 2950
+Wire Wire Line
+	10200 2950 10050 2950
+$Comp
+L power:+12V #PWR0115
+U 1 1 5E6C02B8
+P 10050 2950
+F 0 "#PWR0115" H 10050 2800 50  0001 C CNN
+F 1 "+12V" H 10065 3123 50  0000 C CNN
+F 2 "" H 10050 2950 50  0001 C CNN
+F 3 "" H 10050 2950 50  0001 C CNN
+	1    10050 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 2950
+Wire Wire Line
+	10050 2950 9900 2950
+$Comp
+L Device:R R17
+U 1 1 5E6958A6
+P 9600 4500
+F 0 "R17" H 9670 4546 50  0000 L CNN
+F 1 "18k" H 9670 4455 50  0000 L CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9530 4500 50  0001 C CNN
+F 3 "~" H 9600 4500 50  0001 C CNN
+	1    9600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 5E6C5864
+P 8000 3800
+F 0 "C10" H 8118 3846 50  0000 L CNN
+F 1 "470u" H 8118 3755 50  0000 L CNN
+F 2 "CmpAmpliAudio:CP_Radial_D12.5mm_P5.00mm" H 8038 3650 50  0001 C CNN
+F 3 "~" H 8000 3800 50  0001 C CNN
+	1    8000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5E6C5F6A
+P 7650 3800
+F 0 "C11" H 7550 4000 50  0000 C CNN
+F 1 "100n" H 7550 4100 50  0000 C CNN
+F 2 "CmpAmpliAudio:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7688 3650 50  0001 C CNN
+F 3 "~" H 7650 3800 50  0001 C CNN
+	1    7650 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5E6C67AB
+P 7500 3350
+F 0 "#PWR0116" H 7500 3100 50  0001 C CNN
+F 1 "GND" H 7505 3177 50  0000 C CNN
+F 2 "" H 7500 3350 50  0001 C CNN
+F 3 "" H 7500 3350 50  0001 C CNN
+	1    7500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4150 7650 4150
+Wire Wire Line
+	7650 4150 7650 3950
+Connection ~ 7050 4150
+Wire Wire Line
+	7050 4150 7050 4100
+Wire Wire Line
+	7650 4150 8000 4150
+Wire Wire Line
+	8000 4150 8000 3950
+Connection ~ 7650 4150
+Wire Wire Line
+	8000 3650 8000 3300
+Wire Wire Line
+	8000 3300 7650 3300
+Wire Wire Line
+	7500 3300 7500 3350
+Wire Wire Line
+	7650 3650 7650 3300
+Connection ~ 7650 3300
+Wire Wire Line
+	7650 3300 7500 3300
+$Comp
+L Device:CP C8
+U 1 1 5E6DAFED
+P 8150 1200
+F 0 "C8" H 8268 1246 50  0000 L CNN
+F 1 "470u" H 8268 1155 50  0000 L CNN
+F 2 "CmpAmpliAudio:CP_Radial_D12.5mm_P5.00mm" H 8188 1050 50  0001 C CNN
+F 3 "~" H 8150 1200 50  0001 C CNN
+	1    8150 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5E6DAFF3
+P 7800 1200
+F 0 "C9" H 7700 1300 50  0000 C CNN
+F 1 "100n" H 7700 1400 50  0000 C CNN
+F 2 "CmpAmpliAudio:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7838 1050 50  0001 C CNN
+F 3 "~" H 7800 1200 50  0001 C CNN
+	1    7800 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5E6DAFF9
+P 7800 1550
+F 0 "#PWR0117" H 7800 1300 50  0001 C CNN
+F 1 "GND" H 7805 1377 50  0000 C CNN
+F 2 "" H 7800 1550 50  0001 C CNN
+F 3 "" H 7800 1550 50  0001 C CNN
+	1    7800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1550 7800 1350
+Wire Wire Line
+	7800 1550 8150 1550
+Wire Wire Line
+	8150 1550 8150 1350
+Connection ~ 7800 1550
+Wire Wire Line
+	8150 1050 8150 850 
+Wire Wire Line
+	8150 850  7800 850 
+Connection ~ 7050 850 
+Wire Wire Line
+	7050 850  7050 1000
+Wire Wire Line
+	7800 1050 7800 850 
+Connection ~ 7800 850 
+Wire Wire Line
+	7800 850  7050 850 
+$Comp
+L Device:Q_NPN_ECB Q8
+U 1 1 5E6F9A9C
+P 5800 2350
+F 0 "Q8" H 5991 2396 50  0000 L CNN
+F 1 "BD139" H 5991 2305 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-126-3_Vertical" H 6000 2450 50  0001 C CNN
+F 3 "~" H 5800 2350 50  0001 C CNN
+	1    5800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5E71E7A4
+P 1150 3550
+F 0 "#PWR0118" H 1150 3300 50  0001 C CNN
+F 1 "GND" H 1155 3377 50  0000 C CNN
+F 2 "" H 1150 3550 50  0001 C CNN
+F 3 "" H 1150 3550 50  0001 C CNN
+	1    1150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3550 1150 3450
+NoConn ~ 1450 3200
+Wire Wire Line
+	5900 1850 5900 2050
+Wire Wire Line
+	5900 2050 5350 2050
+Wire Wire Line
+	5350 2050 5350 2200
+Connection ~ 5900 2050
+Wire Wire Line
+	5900 2050 5900 2150
+Wire Wire Line
+	2000 3650 2000 3300
+Connection ~ 2000 3300
+Wire Wire Line
+	2000 3300 1950 3300
+$EndSCHEMATC
