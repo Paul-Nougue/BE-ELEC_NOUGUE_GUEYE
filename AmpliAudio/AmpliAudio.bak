@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Projet Ampli"
-Date "2020-04-13"
+Date "2020-04-15"
 Rev ""
 Comp "Paul NOUGUE-Alassane GUEYE"
 Comment1 "3IMACSD"
@@ -743,17 +743,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 3000 7050 2950
 $Comp
-L Device:Q_NPN_CEB Q9
-U 1 1 5E6AC056
-P 6500 1850
-F 0 "Q9" H 6691 1896 50  0000 L CNN
-F 1 "BD139" H 6691 1805 50  0000 L CNN
-F 2 "CmpAmpliAudio:TO-126-3_Vertical" H 6700 1950 50  0001 C CNN
-F 3 "~" H 6500 1850 50  0001 C CNN
-	1    6500 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_PNP_ECB Q11
 U 1 1 5E6ACA06
 P 6600 3500
@@ -850,13 +839,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5E67BFD2
-P 10700 2550
-F 0 "J2" H 10780 2542 50  0000 L CNN
-F 1 "Conn_01x02" H 10780 2451 50  0000 L CNN
-F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 10700 2550 50  0001 C CNN
-F 3 "~" H 10700 2550 50  0001 C CNN
-	1    10700 2550
-	1    0    0    -1  
+P 10700 2650
+F 0 "J2" H 10780 2642 50  0000 L CNN
+F 1 "Conn_01x02" H 10780 2551 50  0000 L CNN
+F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 10700 2650 50  0001 C CNN
+F 3 "~" H 10700 2650 50  0001 C CNN
+	1    10700 2650
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9900 2550 10500 2550
@@ -1177,4 +1166,15 @@ Wire Wire Line
 Connection ~ 2000 3300
 Wire Wire Line
 	2000 3300 1950 3300
+$Comp
+L Device:Q_NPN_ECB Q9
+U 1 1 5E9A541F
+P 6500 1850
+F 0 "Q9" H 6691 1896 50  0000 L CNN
+F 1 "BD139" H 6691 1805 50  0000 L CNN
+F 2 "" H 6700 1950 50  0001 C CNN
+F 3 "~" H 6500 1850 50  0001 C CNN
+	1    6500 1850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

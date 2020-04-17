@@ -743,17 +743,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 3000 7050 2950
 $Comp
-L Device:Q_NPN_CEB Q9
-U 1 1 5E6AC056
-P 6500 1850
-F 0 "Q9" H 6691 1896 50  0000 L CNN
-F 1 "BD139" H 6691 1805 50  0000 L CNN
-F 2 "CmpAmpliAudio:TO-126-3_Vertical" H 6700 1950 50  0001 C CNN
-F 3 "~" H 6500 1850 50  0001 C CNN
-	1    6500 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_PNP_ECB Q11
 U 1 1 5E6ACA06
 P 6600 3500
@@ -1177,4 +1166,15 @@ Wire Wire Line
 Connection ~ 2000 3300
 Wire Wire Line
 	2000 3300 1950 3300
+$Comp
+L Device:Q_NPN_ECB Q9
+U 1 1 5E9A541F
+P 6500 1850
+F 0 "Q9" H 6691 1896 50  0000 L CNN
+F 1 "BD139" H 6691 1805 50  0000 L CNN
+F 2 "CmpAmpliAudio:TO-126-3_Vertical" H 6700 1950 50  0001 C CNN
+F 3 "~" H 6500 1850 50  0001 C CNN
+	1    6500 1850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
